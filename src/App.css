@@ -1,38 +1,81 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0.2rem;
+}
+
+.text {
+  font-size: 1px;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+
+.main-text {
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.headerContainer {
+  padding: 0px;
+  background-color: lightpink;
+  max-width: 100%;
+  max-height: 10rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.navContainer {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.homeContainer {
+  background-color: #CFCCD6;
+  height: 25rem;
 }
 
-.App-link {
-  color: #61dafb;
+div.homeContainer .bannerText {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.homeContainer .sub p{
+  font-size: 16px;
+  text-align: center;
+  
 }
+div.homeContainer .headshot img{
+  max-width: 100%;
+  border-radius: 50%; 
+  margin-top: 2rem;
+}
+
+div.profileText h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+div.profileText p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* div.aboutContainer,
+div.contactContainer {
+  background-color: lightgrey;
+  height: 15rem;
+}
+
+div.skillsContainer,
+div.projectsContainer {
+  background-color: yellow;
+  height: 15rem;
+}
+
+div.projectsContainer {
+  background-color: lightpink;
+  height: 15rem;
+}
+
+
+div.footer {
+  padding: 0px;
+  background-color: lightpink;
+  max-width: 100%;
+  max-height: 10rem;
+} */
