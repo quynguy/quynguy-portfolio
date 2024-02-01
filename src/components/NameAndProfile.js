@@ -7,12 +7,16 @@ function NameAndProfile() {
     <div className="name-and-profile">
       <h2>Le "Quyen" Nguyen</h2>
       <p>Front-End Web Developer</p>
-      <img src={profilePic} alt="Profile" />
-      <SocialIcons />
-
-        <div className="work-status">
-          <h2>Open For Work</h2>
+      <div className="speech-bubble">
+        <img src={profilePic} alt="Profile" />
+        <div className="speech-text">
+          <p>Welcome to my portfolio!</p>
         </div>
+      </div>
+      <SocialIcons />
+      <div className="work-status">
+        <h2>Accepting Job Offers</h2>
+      </div>
     </div>
   );
 }

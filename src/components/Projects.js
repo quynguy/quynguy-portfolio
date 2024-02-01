@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import SlotMachinePic from '../assets/images/slot-machine.png';
 import WeatherAppPic from '../assets/images/weather-app.png';
+import OrchidPic from '../assets/images/Orchid Outpost.png';
 
 function ProjectsCarousel() {
 
@@ -35,6 +36,13 @@ function ProjectsCarousel() {
       description: "Develop a React-based weather app with a sleek interface, utilizing a chosen API for accurate and real-time weather information. What's the weather in your area?",
       image: WeatherAppPic,
       demoLink: "https://65a326ae3ee3e114fcfcbe8b--splendorous-gelato-e4c3f6.netlify.app/",
+      githubLink: "https://github.com/quynguy/responsive_html_css_e-commerce?tab=readme-ov-file",
+    },
+    {
+      name: "Orchid Outpost",
+      description: "Crafted a responsive e-commerce platform, Orchid Outpost, using HTML and CSS, focusing solely on front-end development to offer a seamless shopping experience.",
+      image: OrchidPic,
+      demoLink: "https://quynguy.github.io/responsive_html_css_e-commerce/",
       githubLink: "https://github.com/quynguy/react-weather-app",
     },
   ];
@@ -81,7 +89,7 @@ function ProjectsCarousel() {
 
                 <div className="project-buttons">
                   <a href={project.demoLink} onClick={(e) => openModalWithLink(e, project)}> <button>Demo</button></a>
-                  <a href={project.githubLink}> <button>GitHub</button> </a>
+                  <a href={project.githubLink} target="_blank"> <button>GitHub</button> </a>
                 </div> 
               </div>
 

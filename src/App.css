@@ -27,6 +27,11 @@
 
 }
 
+.navbar-brand:hover {
+  transform: scale(1.1); 
+  color: #ff7f7f
+}
+
 
 .navbar h1 {
   margin: 0;
@@ -99,6 +104,8 @@
   text-align: center;
 }
 
+
+
 /* skills container  */
 .skills-section {
   margin-top: 2rem;
@@ -125,12 +132,14 @@
 
 select {
   width: 250px;
+  height: 30px;
 }
 
 .pie-chart-container {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
+
 
 
 
@@ -156,6 +165,75 @@ select {
   text-align: center;
 }
 
+
+.name-and-profile img {
+  animation: rock 5s ease-in-out infinite;
+}
+
+@keyframes rock {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/*speech bubble*/
+
+.speech-bubble {
+  position: relative;
+  display: inline-block;
+}
+
+.speech-bubble img {
+  display: block;
+  max-width: 50%;
+}
+
+.speech-text {
+  position: absolute;
+  top: 25%;
+  left: calc(70% + 2px); /* Adjust the distance from the image */
+  transform: translateY(-10%);
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  width: 80px;
+}
+
+.speech-text p {
+  font-size: 15px;
+}
+
+.speech-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  border-style: solid;
+  border-width: 8px; /* Adjust the size of the arrow */
+  border-color: transparent #ffffff transparent transparent;
+  transform: translateY(-50%);
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 /* social media icons */
 
 .social-icons {
@@ -166,12 +244,12 @@ select {
 .social-icons a {
   margin-right: 1rem;
   color: #71816d;
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  transition: transform 0.3s ease; 
 }
 
 .social-icons a:hover {
-  transform: scale(1.2); /* Scale up the icon on hover for a zoom effect */
-  color: #ff7f7f; /* Change the color on hover */
+  transform: scale(1.2); 
+  color: #ff7f7f; 
 }
 
 /* projects - carousel */
@@ -239,6 +317,11 @@ select {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
+.project-buttons a:hover {
+  transform: scale(1.2); 
+}
+
 
 /* modal */
 
@@ -420,6 +503,9 @@ iframe {
   font-size: 15px;
 }
 
+.visit-counter:hover {
+  transform: scale(1.1); 
+}
 
 
 
