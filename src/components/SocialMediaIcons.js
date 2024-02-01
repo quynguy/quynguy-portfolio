@@ -1,14 +1,12 @@
 // SocialIcons.js
 import React from 'react';
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function SocialIcons() {
   return (
     <div className="social-icons">
-      <a href="your_twitter_link"><FaTwitter /></a>
-      <a href="your_facebook_link"><FaFacebook /></a>
-      <a href="your_instagram_link"><FaInstagram /></a>
-      <a href="your_linkedin_link"><FaLinkedin /></a>
+      <a href="https://github.com/quynguy"><FaGithub size={30}/></a>
+      <a href="https://linkedin.com/nquyenle"><FaLinkedin size={30}/></a>
     </div>
   );
 }

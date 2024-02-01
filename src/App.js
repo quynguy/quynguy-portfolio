@@ -29,17 +29,13 @@ function App() {
       </nav>
       <div className="content-wrapper">
         <div className="left-side">
-          <About />
-          <Skills />
-          <Projects />
           <div className="scrollable-content">
-            {/* Sample content */}
-            <p>This is the left side content.</p>
+            <About />
+            <Skills />
+            <Projects />
           </div>
         </div>
         <div className="right-side">
-          {/* Add your content for the right side here */}
-          <p>This is the right side content.</p>
           <NameAndProfile />
           <SIcons />
           <FAQ />

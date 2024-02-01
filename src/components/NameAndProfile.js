@@ -5,7 +5,7 @@ import profilePic from '/root/SEI/portfolio/quynguy-portfolio/src/assets/images/
 function NameAndProfile() {
   return (
     <div className="name-and-profile">
-      <h2>Your Name</h2>
+      <h2>Le "Quyen" Nguyen</h2>
       <img src={profilePic} alt="Profile" />
     </div>
   );

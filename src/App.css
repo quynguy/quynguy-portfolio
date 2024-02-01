@@ -57,14 +57,24 @@
 }
 
 /* about container */
-.about-me-section h2 {
+.aboutContainer {
+  border: 2px solid #c9b79c;
+  border-radius: 10%;
+  background-color: #c9b79c;
+}
+
+.about-me-section h2, p {
   text-align: center;
 }
 
 /* skills container  */
 .skills-section {
   margin-top: 2rem;
+  background-color: #c9b79c;
+  border: 2px solid #c9b79c;
+  border-radius: 10%;
 }
+
 .skills-section h2 {
   text-align: center;
 }
@@ -78,7 +88,14 @@
 .frontend-skills,
 .backend-skills {
   flex: 1; /* To make both dropdowns take equal width */
+  text-align: center;
 }
+
+.pie-chart-container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
 
 
 /* right side */
@@ -91,8 +108,25 @@
 .name-and-profile img {
   border-radius: 50%;
   max-width: 10rem;
+  display: block;
+  margin: auto;
 }
 
+.name-and-profile h2 {
+  text-align: center;
+}
+
+/* social media icons */
+
+.social-icons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  color: #e73535;
+}
 
 /* projects - carousel */
 
@@ -101,6 +135,9 @@
   margin-top: 20px;
 }
 
+.carousel-wrapper {
+  background-color: pink;
+}
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -111,20 +148,58 @@
   flex: 0 0 300px; /* Adjust as needed */
   margin-right: 20px;
   scroll-snap-align: start;
+  max-height: 500px;
 }
 
 .project-info {
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: rgb(230, 230, 238);
+  text-align: start;
 }
 
-.project-image img {
-  width: 100%;
-  height: auto;
+.project-info img {
+  width: 250px;
+  height: 250px;
 }
 
+
+/* modal */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+ background-color: #fff;
+ padding: 20px; 
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ max-width: 60%;
+ max-height: 90%;
+ overflow: auto;
+}
+
+iframe {
+  width: 700px;
+  height: 600px;
+  border: none;
+}
 
 /* faq */
+
+.faq-heading {
+  font-size: 1.25rem;
+  text-align: center;
+}
 
 .faq-list {
   margin-top: 20px;
@@ -138,7 +213,7 @@
 }
 
 .faq-item:hover {
-  background-color: #f9f9f9;
+  background-color: #ebafaf;
 }
 
 .faq-item h3 {
@@ -156,7 +231,16 @@
 }
 
 .faq-list {
-  max-height: 15rem; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.faq-question {
+  font-size: 0.90rem;
+}
+
+.faq-answer {
+  font-size: 0.95rem;
   overflow-y: auto;
 }
 
@@ -169,6 +253,30 @@
 
 .toggle-icon svg {
   font-size: 1.2em;
+}
+
+/* contact */
+.contact-me h2 {
+  text-align: center;
+  animation: flash 1s infinite;
+
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.work-status h2 {
+  margin-bottom: 2rem;
+  color: rgb(233, 91, 91);
 }
 
 

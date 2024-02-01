@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 quynguy | made with 💖 | All rights reserved.</p>
     </footer>
   );
 }

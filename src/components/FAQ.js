@@ -42,7 +42,7 @@ function FAQ() {
         </div>
 
         <div className={`faq-item ${expanded ? 'expanded' : ''}`} onClick={toggleExpand}>
-          <h3 className="faq-question">Can you explain your approach to responsive design?</h3>
+          <h3 className="faq-question">What's your approach to responsive design?</h3>
           <div className="faq-answer">
             {expanded && <p className="faq-answer-text">
               
