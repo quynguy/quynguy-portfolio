@@ -1,15 +1,12 @@
-import React from 'react'
+// Footer.js
+import React from 'react';
 
-const AppFooter = () => {
+function Footer() {
   return (
-    <div className="container">
-      <div className="footer">
-        <div className="logo">
-          <h1>Footer</h1>
-        </div>
-      </div>
-    </div>
-  )
+    <footer className="footer">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+  );
 }
 
-export default AppFooter;
+export default Footer;
