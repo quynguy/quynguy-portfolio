@@ -9,9 +9,7 @@ function Modal({ onClose, project }) {
         <button className="close-button" onClick={onClose}>Close</button>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
-        {/* Use an iframe to embed the demo website */}
         <iframe src={project.demoLink} title={project.name}> </iframe>
-        {/* Add any other project details here */}
       </div>
     </div>
   );

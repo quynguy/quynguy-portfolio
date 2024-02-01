@@ -1,7 +1,6 @@
 import './App.css';
 
 
-import AppHeader from './components/Header';
 import AppFooter from './components/Footer';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -9,9 +8,6 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import NameAndProfile from '/root/SEI/portfolio/quynguy-portfolio/src/components/NameAndProfile.js';
 import FAQ from './components/FAQ';
-import SIcons from './components/SocialMediaIcons';
-
-import Home from './components/Home';
 
 function App() {
 
@@ -32,13 +28,12 @@ function App() {
           <div className="scrollable-content">
             <About />
             <Skills />
-            <Projects />
+            <FAQ />
           </div>
         </div>
         <div className="right-side">
           <NameAndProfile />
-          <SIcons />
-          <FAQ />
+          <Projects />
           <Contact />
         </div>
       </div>

@@ -1,20 +1,32 @@
 /* App.css */
+
+* {
+  font-family: 'Mali', cursive;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-width: 1200px; /* Limiting maximum width */
-  margin: 0 auto; /* Centering the layout horizontally */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
+
 
 .navbar {
   background-color: #71816d;
   color: #fff;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Align items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between; 
+  align-items: center; 
 }
+
+.navbar-brand h1 {
+  font-size: 30px;
+
+}
+
 
 .navbar h1 {
   margin: 0;
@@ -50,17 +62,37 @@
 
 .left-side {
   flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto; 
   background-color: #f1e0c5;
-  max-height: 50rem;
+  max-height: 80rem;
   padding: 1.75rem;
 }
+
+.left-side::-webkit-scrollbar {
+  width: 5px;
+}
+
+.left-side::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.left-side::-webkit-scrollbar-thumb {
+  background: #71816d;
+  border-radius: 20px; 
+}
+
+
 
 /* about container */
 .aboutContainer {
   border: 2px solid #c9b79c;
   border-radius: 10%;
   background-color: #c9b79c;
+  padding: 1px;
+}
+
+.about-me-section {
+  padding: 10px;
 }
 
 .about-me-section h2, p {
@@ -81,14 +113,18 @@
 
 .skill-dropdowns {
   display: flex;
-  justify-content: space-evenly; /* To space the dropdowns evenly */
+  justify-content: space-evenly; 
   margin-bottom: 2rem;
 }
 
 .frontend-skills,
 .backend-skills {
-  flex: 1; /* To make both dropdowns take equal width */
+  flex: 1; 
   text-align: center;
+}
+
+select {
+  width: 250px;
 }
 
 .pie-chart-container {
@@ -101,8 +137,12 @@
 /* right side */
 
 .right-side {
-  flex: 0 0 30%; /* 30% width of the parent container */
+  flex: 0 0 30%; 
   background-color: #c9b79c;
+}
+
+.name-and-profile p {
+  font-size: 15px;
 }
 
 .name-and-profile img {
@@ -125,19 +165,31 @@
 
 .social-icons a {
   margin-right: 1rem;
-  color: #e73535;
+  color: #71816d;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Scale up the icon on hover for a zoom effect */
+  color: #ff7f7f; /* Change the color on hover */
 }
 
 /* projects - carousel */
 
 /* App.css */
 .projects-carousel-section {
+  align-items: center;
   margin-top: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 4px solid #71816d;
 }
 
-.carousel-wrapper {
-  background-color: pink;
+.projects-carousel-section h2 {
+  text-align: center;
 }
+
 .carousel {
   display: flex;
   overflow-x: auto;
@@ -145,23 +197,48 @@
 }
 
 .project {
-  flex: 0 0 300px; /* Adjust as needed */
-  margin-right: 20px;
-  scroll-snap-align: start;
-  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-info {
   padding: 10px;
-  background-color: rgb(230, 230, 238);
-  text-align: start;
+  background-color: #f1e0c5;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .project-info img {
   width: 250px;
   height: 250px;
+  display: block;
+  margin: 0 auto;
 }
 
+.project-buttons {
+  display: flex;                    
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-buttons button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #71816d;
+  background: #c9b79c;
+}
+
+.project-buttons a {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 
 /* modal */
 
@@ -196,6 +273,13 @@ iframe {
 
 /* faq */
 
+.faq {
+  margin-top: 2rem;
+  background-color: #c9b79c;
+  border: 2px solid #c9b79c;
+  border-radius: 15px;
+}
+
 .faq-heading {
   font-size: 1.25rem;
   text-align: center;
@@ -203,6 +287,8 @@ iframe {
 
 .faq-list {
   margin-top: 20px;
+  max-height: 17rem;
+  overflow-y: auto;
 }
 
 .faq-item {
@@ -213,7 +299,8 @@ iframe {
 }
 
 .faq-item:hover {
-  background-color: #ebafaf;
+  background-color: #71816d;
+  color: white;
 }
 
 .faq-item h3 {
@@ -226,23 +313,25 @@ iframe {
   transition: max-height 0.3s ease-out;
 }
 
-.faq-item.expanded .faq-answer {
-  max-height: 100px; /* Adjust as needed */
+.faq-answer {
+  font-size: 0.95rem;
+  overflow-y: auto;
 }
 
-.faq-list {
-  max-height: 300px; /* Adjust as needed */
-  overflow-y: auto;
+
+.faq-item.expanded .faq-answer {
+  max-height: 100px;
 }
 
 .faq-question {
   font-size: 0.90rem;
 }
 
-.faq-answer {
-  font-size: 0.95rem;
-  overflow-y: auto;
+
+.faq-answer::-webkit-scrollbar {
+  width: 0;
 }
+
 
 .toggle-icon {
   position: absolute;
@@ -255,10 +344,43 @@ iframe {
   font-size: 1.2em;
 }
 
+.faq-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.faq-list::-webkit-scrollbar-track {
+  background: #f1e0c5;
+}
+
+.faq-list::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px; 
+}
+
+
 /* contact */
+
+.contact-me {
+  border-top: 4px solid #71816d;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
 .contact-me h2 {
   text-align: center;
+}
+
+.contact-me p {
+  margin: 0;
+}
+
+.work-status h2 {
+  text-align: center;
   animation: flash 1s infinite;
+  font-size: 20px;
 
 }
 
@@ -280,13 +402,35 @@ iframe {
 }
 
 
+/* visit counter */
+
+.visit-counter {
+  text-align: center;
+  font-size: 17px;
+  color: white; 
+  padding: 10px; 
+  background-color: #71816d;
+  border-radius: 8px;
+  width: 250px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.visit-counter p {
+  font-size: 15px;
+}
+
+
+
+
 /* footer */
 
 .footer {
   background-color: #71816d;
   color: #fff;
   padding: 10px 20px;
-  display: flex;
-  justify-content: space-between; /* Align items horizontally */
-  align-items: center; /* Center items vertically */
+}
+
+.footer p {
+  text-align: center;
 }

@@ -1,4 +1,3 @@
-// ProjectsCarousel.js
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import Modal from '/root/SEI/portfolio/quynguy-portfolio/src/components/Modal.js'; 
@@ -19,22 +18,24 @@ function ProjectsCarousel() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Adjusted to show only 1 slide at a time
+    slidesToShow: 1, 
     slidesToScroll: 1
   };
 
   const projects = [
     {
       name: "Slot Machine",
-      description: "Las Vegas Casino Game",
+      description: "Experience the Halloween-themed slot machine crafted with HTML, CSS, and JavaScript. Take a chance by placing your bet and see if Lady Luck is on your side!",
       image: SlotMachinePic,
       demoLink: "https://quynguy.github.io/slot-machine-game/",
+      githubLink: "https://github.com/quynguy/slot-machine-game",
     },
     {
       name: "Weather App",
-      description: "Weather App created using React",
+      description: "Develop a React-based weather app with a sleek interface, utilizing a chosen API for accurate and real-time weather information. What's the weather in your area?",
       image: WeatherAppPic,
       demoLink: "https://65a326ae3ee3e114fcfcbe8b--splendorous-gelato-e4c3f6.netlify.app/",
+      githubLink: "https://github.com/quynguy/react-weather-app",
     },
   ];
 
@@ -55,28 +56,36 @@ function ProjectsCarousel() {
   };
 
   const openModalWithLink = (e, project) => {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault(); 
     console.log("Opening modal...");
     setSelectedProject(project);
     setShowModal(prevShowModal => {
       console.log("showModal state:", !prevShowModal);
-      return true; // Update the showModal state to true
+      return true; 
     });
   };
 
   return (
     <div id="projects" className="projects-carousel-section">
       <h2>My Projects</h2>
+
       <div className="carousel-wrapper">
         <Slider {...settings} ref={sliderRef}>
           {projects.map((project, index) => (
             <div key={index} className="project">
+              
               <div className="project-info">
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
-                <a href={project.demoLink} onClick={(e) => openModalWithLink(e, project)}>Demo</a>
-                  <img src={project.image} alt={project.name} />
+                <img src={project.image} alt={project.name} />
+
+                <div className="project-buttons">
+                  <a href={project.demoLink} onClick={(e) => openModalWithLink(e, project)}> <button>Demo</button></a>
+                  <a href={project.githubLink}> <button>GitHub</button> </a>
+                </div> 
               </div>
+
+
             </div>
           ))}
         </Slider>
@@ -84,7 +93,6 @@ function ProjectsCarousel() {
 
       {showModal && (
         <Modal onClose={closeModal} project={selectedProject}>
-        {/* Additional children if needed */}
         </Modal>
 )}
 

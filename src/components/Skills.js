@@ -1,4 +1,4 @@
-// Skills.js
+
 import React from 'react';
 import SkillsPieChart from './SkillsPieChart';
 
@@ -10,23 +10,30 @@ function Skills() {
       <div className="skill-dropdowns">
         <div className="frontend-skills">
           <h3>Frontend Development</h3>
-          {/* Frontend skills dropdown */}
           <select>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
-            <option value="javascript">JavaScript</option>
-            {/* Add more frontend skills here */}
+            <option value="seo">SEO Basics</option>
+            <option value="responsive-design">Responsive Design</option>
+            <option value="css-preprocessors">CSS Preprocessors</option>
+            <option value="version-control">Version Control Systems: Git</option>
+            <option value="frontend-framework">Front-end Frampworks: Boostrap</option>
+            <option value="javascript-framework">JS Frameworks: React</option>
+            <option value="accessibility">Accessibility Standards </option>
+            <option value="cross-browser">Cross-Browser Compatibility</option>
+            <option value="build-tools">Front-end Build Tools: Webpack</option>
           </select>
         </div>
 
         <div className="backend-skills">
           <h3>Backend Development</h3>
-          {/* Backend skills dropdown */}
           <select>
-            <option value="nodejs">Node.js</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            {/* Add more backend skills here */}
+            <option value="runtime">Runtime Environments: Node.js</option>
+            <option value="languages">Languages: JavaScript, Python, PHP </option>
+            <option value="server-side">Server-Side Frameworks: Express.js</option>
+            <option value="database">Database: MySQL, MongoDB</option>
+            <option value="java">Authentication and Authorization</option>
+            <option value="api">API Development</option>
           </select>
         </div>
       </div>
