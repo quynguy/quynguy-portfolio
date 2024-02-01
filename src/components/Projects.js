@@ -45,7 +45,7 @@ function ProjectsCarousel() {
       description: "Polyglot Pages: A front-end project fostering multilingual preschool learning and global perspectives with dedicated educators and engaging curriculum.",
       image: PPPic,
       demoLink: "https://65bc20ccbeb63c00805fb6d7--enchanting-valkyrie-747970.netlify.app/",
-      githubLink: "https://www.instagram.com/fieldsandflavors/",
+      githubLink: "https://65bc20ccbeb63c00805fb6d7--enchanting-valkyrie-747970.netlify.app/",
     },
     {
       name: "Weather App",
