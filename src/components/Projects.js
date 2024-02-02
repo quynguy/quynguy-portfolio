@@ -50,7 +50,7 @@ function ProjectsCarousel() {
     },
     {
       name: "Karma Kitchen",
-      description: "A conceptual project dedicated to providing Buddha bowls catering services. The mission revolves around sourcing and utilizing only the freshest ingredients, crafting visually appealing bowls that cater to individuals of all ages.",
+      description: "A conceptual project dedicated to providing Buddha bowls catering services.  Crafting visually appealing bowls that cater to individuals of all ages.",
       image: KarmaPic,
       demoLink: "https://65bd526f5c84e5009b0451c8--jazzy-granita-d96f3c.netlify.app/",
       githubLink: "https://github.com/quynguy/karma-kitchen-react",
