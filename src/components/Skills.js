@@ -28,12 +28,12 @@ function Skills() {
         <div className="backend-skills">
           <h3>Backend Development</h3>
           <select>
-            <option value="runtime">Runtime Environments: Node.js</option>
-            <option value="languages">Languages: JavaScript, Python, PHP </option>
+            <option value="runtime">Runtime Environment: Node.js</option>
+            <option value="languages">Languages: JavaScript </option>
             <option value="server-side">Server-Side Frameworks: Express.js</option>
             <option value="database">Database: MySQL, MongoDB</option>
             <option value="java">Authentication and Authorization</option>
-            <option value="api">API Development</option>
+            <option value="api">Application Programming Interface</option>
           </select>
         </div>
       </div>

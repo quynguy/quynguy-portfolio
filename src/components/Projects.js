@@ -10,6 +10,7 @@ import WeatherAppPic from '../assets/images/weather-app.png';
 import OrchidPic from '../assets/images/Orchid Outpost.png';
 import FFPic from '../assets/images/Fields-and-Flavors.png';
 import PPPic from '../assets/images/Polygot-Pages.png'
+import KarmaPic from '../assets/images/Karma-Kitchen.png';
 
 function ProjectsCarousel() {
 
@@ -38,21 +39,21 @@ function ProjectsCarousel() {
       description: "Crafted a responsive e-commerce platform, Orchid Outpost, using HTML and CSS, focusing solely on front-end development to offer a seamless shopping experience.",
       image: OrchidPic,
       demoLink: "https://quynguy.github.io/responsive_html_css_e-commerce/",
-      githubLink: "https://github.com/quynguy/react-weather-app",
+      githubLink: "https://quynguy.github.io/responsive_html_css_e-commerce/",
     },
     {
       name: "Polygot Pages Preschool",
       description: "Polyglot Pages: A front-end project fostering multilingual preschool learning and global perspectives with dedicated educators and engaging curriculum.",
       image: PPPic,
       demoLink: "https://65bc20ccbeb63c00805fb6d7--enchanting-valkyrie-747970.netlify.app/",
-      githubLink: "https://65bc20ccbeb63c00805fb6d7--enchanting-valkyrie-747970.netlify.app/",
+      githubLink: "https://github.com/quynguy/polygot-pages-react",
     },
     {
-      name: "Weather App",
-      description: "Develop a React-based weather app with a sleek interface, utilizing a chosen API for accurate and real-time weather information. What's the weather in your area?",
-      image: WeatherAppPic,
-      demoLink: "https://65a326ae3ee3e114fcfcbe8b--splendorous-gelato-e4c3f6.netlify.app/",
-      githubLink: "https://github.com/quynguy/responsive_html_css_e-commerce?tab=readme-ov-file",
+      name: "Karma Kitchen",
+      description: "A conceptual project dedicated to providing Buddha bowls catering services. The mission revolves around sourcing and utilizing only the freshest ingredients, crafting visually appealing bowls that cater to individuals of all ages.",
+      image: KarmaPic,
+      demoLink: "https://65bd526f5c84e5009b0451c8--jazzy-granita-d96f3c.netlify.app/",
+      githubLink: "https://github.com/quynguy/karma-kitchen-react",
     },
   ];
 
