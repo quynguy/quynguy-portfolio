@@ -18,7 +18,7 @@ const VisitCounter = () => {
     incrementCounter();
   }, []);
 
-  return <div className="visit">Page visits: {visits}</div>;
+  return <div className="visit"> </div>;
 };
 
 export default VisitCounter;

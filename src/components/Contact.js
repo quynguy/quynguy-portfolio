@@ -13,7 +13,7 @@ function Contact() {
 
       <div className="visit-counter">
           <VisitCounter />
-          <p>Help me get to 1000 visits!</p>
+          <p>Let's collaborate! What should we make?</p>
         </div>
 
     </div>
